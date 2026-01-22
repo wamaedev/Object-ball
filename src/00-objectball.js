@@ -114,7 +114,8 @@ function gameObject(){
     }
   }
 }
-console.log(gameObject())
+// console.log(gameObject());
+
 // function homeTeamName(){
 //   let object = gameObject();
 //   return object["home"]["teamName"];
@@ -131,5 +132,5 @@ function numPointsScored(playerName){
   }
   return "Player not found";
 }
-console.log(numPointsScored("Brendan Haywood"))
-console.log(numPointsScored("Presbury Wamae"))
+console.log(numPointsScored("Brendan Haywood"));
+console.log(numPointsScored("Presbury Wamae"));
