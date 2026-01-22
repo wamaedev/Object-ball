@@ -134,3 +134,16 @@ function numPointsScored(playerName){
 }
 console.log(numPointsScored("Brendan Haywood"));
 console.log(numPointsScored("Presbury Wamae"));
+
+function shoeSize(playerName){
+  let object = gameObject();
+  if(object.home.players[playerName]){
+    return object.home.players[playerName].shoe;
+  }
+  if(object.away.players[playerName]){
+    return object.away.players[playerName].shoe;
+  }
+  return "Player not found";
+}
+console.log(shoeSize("Bismak Biyombo"));
+console.log(numPointsScored("Presbury Wamae"));
