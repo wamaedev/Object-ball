@@ -114,13 +114,13 @@ function gameObject(){
     }
   }
 }
-// console.log(gameObject());
+console.log(gameObject());
 
-// function homeTeamName(){
-//   let object = gameObject();
-//   return object["home"]["teamName"];
-// }
-// console.log(homeTeamName());
+function homeTeamName(){
+  let object = gameObject();
+  return object["home"]["teamName"];
+}
+console.log(homeTeamName());
 
 function numPointsScored(playerName){
   let object = gameObject();
@@ -161,18 +161,8 @@ function teamColors(teamName){
 console.log(teamColors("Brooklyn Nets"));
 console.log(teamColors("Los Angeles Lakers"));
 
-function teamNames(bTeamName){
+function teamNames(){
   let object = gameObject();
-  if(object.home.teamName === bTeamName){
-    return object.home.teamName
-  }
-  if(object.away.teamName === bTeamName){
-    return object.away.teamName
-  }
-  return "Team not found"
+  return [object.home.teamName, object.away.teamName];
 }
-console.log(teamColors("Brooklyn Nets"));
-console.log(teamColors("Charlotte Hornets"));
-console.log(teamColors("Los Angeles Lakers"));
-
-
+console.log(teamNames())
