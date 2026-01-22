@@ -166,7 +166,7 @@ function teamNames(bTeamName){
   if(object.home.teamName === bTeamName){
     return object.home.teamName
   }
-  if(object.haway.teamName === bTeamName){
+  if(object.away.teamName === bTeamName){
     return object.away.teamName
   }
   return "Team not found"
