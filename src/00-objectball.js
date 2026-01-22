@@ -147,3 +147,17 @@ function shoeSize(playerName){
 }
 console.log(shoeSize("Bismak Biyombo"));
 console.log(numPointsScored("Presbury Wamae"));
+
+function teamColors(teamName){
+  let object = gameObject();
+  if(object.home.teamName === teamName){
+    return object.home.colors
+  }
+  if(object.away.teamName === teamName){
+    return object.away.colors
+  }
+  return "Team not found";
+}
+console.log(teamColors("Brooklyn Nets"));
+console.log(teamColors("Los Angeles Lakers"));
+
