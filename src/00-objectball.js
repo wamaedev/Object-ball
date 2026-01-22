@@ -57,7 +57,7 @@ function gameObject(){
       }
     },
     away: {
-      teamName: "Jason Terry",
+      teamName: "Charlotte Hornets",
       colors: ["Turquoise", "Purple"],
       players: {
         "Jeff Adrien": {
@@ -160,4 +160,19 @@ function teamColors(teamName){
 }
 console.log(teamColors("Brooklyn Nets"));
 console.log(teamColors("Los Angeles Lakers"));
+
+function teamNames(bTeamName){
+  let object = gameObject();
+  if(object.home.teamName === bTeamName){
+    return object.home.teamName
+  }
+  if(object.haway.teamName === bTeamName){
+    return object.away.teamName
+  }
+  return "Team not found"
+}
+console.log(teamColors("Brooklyn Nets"));
+console.log(teamColors("Charlotte Hornets"));
+console.log(teamColors("Los Angeles Lakers"));
+
 
