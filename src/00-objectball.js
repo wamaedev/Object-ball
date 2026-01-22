@@ -115,3 +115,21 @@ function gameObject(){
   }
 }
 console.log(gameObject())
+// function homeTeamName(){
+//   let object = gameObject();
+//   return object["home"]["teamName"];
+// }
+// console.log(homeTeamName());
+
+function numPointsScored(playerName){
+  let object = gameObject();
+  if (object.home.players[playerName]){
+    return object.home.players[playerName].points
+  }
+  if (object.away.players[playerName]){
+    return object.away.players[playerName].points
+  }
+  return "Player not found";
+}
+console.log(numPointsScored("Brendan Haywood"))
+console.log(numPointsScored("Presbury Wamae"))
