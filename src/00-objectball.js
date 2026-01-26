@@ -166,3 +166,17 @@ function teamNames(){
   return [object.home.teamName, object.away.teamName];
 }
 console.log(teamNames())
+
+function playerNumbers(teamName){
+let object = gameObject();
+let teamPlayers;
+if(object.home.teamName === teamName){
+   teamPlayers = object.home.players;
+}else if(object.away.teamName === teamName){
+  teamPlayers = object.away.players;
+}else{
+  return "Team not found"
+}
+return Object.values(teamPlayers).map(player => player.number);
+} 
+console.log(playerNumbers("Brooklyn Nets"));
